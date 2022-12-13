@@ -72,7 +72,7 @@ class Beer extends Beverage {
     }
 
 //Methods
-    private function beerInfo()
+    private function beerInfo():string
     {
         return "<br> Hi i'm {$this->name} and have an alcohol percentage of {$this->alcoholpercentage} and a {$this->color} color";
     }
@@ -92,7 +92,7 @@ echo "<br>{$duvel->getAlcoholPercentage()}";
 echo $duvel->getInfo();
 $duvel->setcolor("light");
 echo $duvel->getcolor();
-echo $reflectionBeer->invoke($duvel); //reflection is a maechanism to access private methods outside of a class
+echo $reflectionBeer->invoke($duvel); //reflection is a mechanism to access private methods outside of a class
 
 /* EXERCISE 4
 Copy the code of exercise 3 to here and delete everything related to cola.
